@@ -19,7 +19,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
@@ -363,13 +362,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf
 
-# Touch features
-PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.xiaomi_mido
-
-# Trust HAL
-PRODUCT_PACKAGES += \
-    vendor.lineage.trust@1.0-service
 
 # USB HAL
 PRODUCT_PACKAGES += \
@@ -390,6 +382,10 @@ PRODUCT_PACKAGES += \
     android.hardware.vr@1.0-impl \
     android.hardware.vr@1.0-service \
     vr.msm8953
+    
+# Wallpapers
+PRODUCT_PACKAGES += \
+    PixelLiveWallpaperPrebuilt
 
 # Whitelisted apps
 PRODUCT_COPY_FILES += \
