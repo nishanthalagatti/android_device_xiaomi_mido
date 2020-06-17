@@ -184,6 +184,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
     android.hardware.gatekeeper@1.0-service
+    
+# GoogleCamera
+$(call inherit-product, device/xiaomi/mido/Gcam/config.mk)
 
 # GPS
 PRODUCT_PACKAGES += \
