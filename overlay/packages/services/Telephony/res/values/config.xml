@@ -22,6 +22,9 @@
 <!-- Phone app resources that may need to be customized
      for different hardware or product builds. -->
 <resources>
+    <!-- The package name for the platform carrier config app, bundled with system image. -->
+    <string name="platform_carrier_config_package" translatable="false">com.google.android.carrier</string>
+    
     <!-- Determine whether we should show the "listen for instructions" screen after
          successfully placing the OTA call -->
     <integer name="OtaShowListeningScreen">1</integer>
